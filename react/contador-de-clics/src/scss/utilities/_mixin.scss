@@ -1,0 +1,9 @@
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+@mixin square($size, $radius) {
+  min-width: $size;
+  height: $size;
+  border-radius: $radius;
+}

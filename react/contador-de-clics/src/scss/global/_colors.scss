@@ -1,0 +1,11 @@
+$background-color: #1C2833;
+$text-color: #ECF9FF;
+$primary-color: #148F77;
+$secondary-color: #424949;
+
+:root {
+    --bg-body: #{$background-color};
+    --txt-color: #{$text-color};
+    --btn-primary: #{$primary-color};
+    --btn-secondary: #{$secondary-color};
+}

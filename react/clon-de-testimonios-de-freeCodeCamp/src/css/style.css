@@ -1,0 +1,76 @@
+.contenedor-testimonio {
+  width: 1170px;
+  height: 368px;
+  margin: 10px 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 13px 1px rgba(255, 255, 255, 0.2);
+}
+.contenedor-testimonio .imagen-testimonio {
+  height: 100%;
+  width: auto;
+}
+.contenedor-testimonio .contenedor-texto-testimonio {
+  text-align: center;
+  padding: 40px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.contenedor-testimonio .contenedor-texto-testimonio .nombre-testimonio {
+  font-size: 2rem;
+}
+.contenedor-testimonio .contenedor-texto-testimonio .cargo-testimonio {
+  font-size: 2rem;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+.contenedor-testimonio .contenedor-texto-testimonio .texto-testimonio {
+  font-size: 1.7rem;
+  text-align: justify;
+  line-height: 1.9rem;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.App .contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.App .contenedor-principal h1 {
+  max-width: 940px;
+  font-size: 2.5em;
+  font-family: Lato, sans-serif;
+  line-height: 1.1;
+  margin: 40px 0;
+}
+
+:root {
+  --bg-color: #242424;
+  --txt-color: #ECF9FF;
+  --font-fa: Quicksand, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-family: var(--font-fa);
+}
+
+/*# sourceMappingURL=style.css.map */

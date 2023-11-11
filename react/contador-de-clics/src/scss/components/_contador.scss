@@ -1,0 +1,13 @@
+@use '../utilities/mixin';
+
+.contador {
+  font-size: 15rem;
+  padding: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid #fff;
+  margin-bottom: 15px;
+  @include mixin.square(300px, 5px);
+}

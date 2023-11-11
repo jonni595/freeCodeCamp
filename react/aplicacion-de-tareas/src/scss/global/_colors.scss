@@ -1,0 +1,18 @@
+$background-color: #0F172A;
+$txt-color: #03001C;
+$primary-color: #ECF9FF;
+$secondary-color: #1E293B;
+$third-color: #38BDF8;
+$fourth-color: #088395;
+$fifth-color: #143F6B;
+
+
+:root {
+    --bg-color: #{$background-color};
+    --text-color: #{$txt-color};
+    --button-bg-color: #{$secondary-color};
+    --todo-bg-color: #{$primary-color};
+    --bd-input: #{$third-color};
+    --successful: #{$fourth-color};
+    --todos-bg-color: #{$fifth-color};
+}

@@ -1,0 +1,58 @@
+.boton-contenedor {
+  height: 83px;
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border: 2px solid var(--border-calc);
+  border-radius: 25px;
+  margin: 4px;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+
+  &:hover::before {
+    animation: enlarge 1s forwards;
+  }
+}
+
+.boton-contenedor::before {
+  --opacity: 0.2;
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  opacity: var(--opacity);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  z-index: -1;
+}
+
+.operador {
+  transition: all ease-in 0.2s;
+
+  &:hover {
+    background-color: var(--bg-func-calc);
+    color: var(--txt-func-calc);
+  }
+}
+
+// Animations
+
+@-webkit-keyframes enlarge {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+  }
+}
+@keyframes enlarge {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+  }
+}

@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-fa);
+  background-color: var(--bg-body);
+  color: var(--txt-color);
+  line-height: 1.1;
+}
+
+:root {
+  --bg-body: #1C2833;
+  --txt-color: #ECF9FF;
+  --btn-primary: #148F77;
+  --btn-secondary: #424949;
+}
+
+:root {
+  --font-fa: DM Sans, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1rem;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  font-family: inherit;
+}
+.App .freecodecamp-logo-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.App .freecodecamp-logo-contenedor .freecodecamp-logo {
+  height: 50px;
+}
+.App .contenedor-principal {
+  min-width: 600px;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 250px;
+  height: 80px;
+  font-family: Roboto, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all ease-in 0.1s;
+}
+
+.boton-clic {
+  background-color: var(--btn-primary);
+}
+
+.boton-reiniciar {
+  background-color: var(--btn-secondary);
+}
+
+.boton-clic:hover, .boton-reiniciar:hover {
+  filter: brightness(0.7);
+  transition: all ease-in 0.1s;
+}
+
+.contador {
+  font-size: 15rem;
+  padding: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid #fff;
+  margin-bottom: 15px;
+  min-width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

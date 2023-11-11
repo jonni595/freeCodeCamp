@@ -1,0 +1,28 @@
+@use '../utilities/mixin';
+
+button {
+  width: 250px;
+  height: 80px;
+  font-family: Roboto, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #fff;
+  @include mixin.rounded(15px);
+  margin: 5px;
+  cursor: pointer;
+  transition: all ease-in .1s;
+}
+
+.boton-clic {
+  background-color: var(--btn-primary);
+}
+
+.boton-reiniciar {
+    background-color: var(--btn-secondary);
+  }
+
+  .boton-clic:hover, .boton-reiniciar:hover {
+    filter: brightness(.7);
+    transition: all ease-in .1s;
+  }

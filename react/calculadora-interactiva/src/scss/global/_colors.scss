@@ -1,0 +1,14 @@
+$background-color: #0C2835;
+$txt-color: #FFFDEF;
+$primary-color: #008B8B;
+$secondary-color: #FCDAB7;
+$third-color: #F05454;
+
+
+:root {
+    --bg-color: #{$background-color};
+    --text-color: #{$txt-color};
+    --border-calc: #{$primary-color};
+    --bg-func-calc: #{$secondary-color};
+    --txt-func-calc: #{$third-color};
+}

@@ -1,0 +1,20 @@
+$background-color: #242424;
+$text-color: #ECF9FF;
+$font-family: 'Quicksand', sans-serif;
+
+:root {
+    --bg-color: #{$background-color};
+    --txt-color: #{$text-color};
+    --font-fa: #{$font-family};
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    font-family: var(--font-fa);
+}

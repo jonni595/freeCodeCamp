@@ -1,0 +1,167 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  color: #fff;
+  margin-top: 40px;
+  line-height: 1.1;
+}
+
+:root {
+  --bg-color: #0F172A;
+  --text-color: #03001C;
+  --button-bg-color: #1E293B;
+  --todo-bg-color: #ECF9FF;
+  --bd-input: #38BDF8;
+  --successful: #088395;
+  --todos-bg-color: #143F6B;
+}
+
+:root {
+  --font: Open Sans, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1rem;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.app .tareas-listas-principal {
+  width: 600px;
+  min-height: 500px;
+  background-color: var(--todo-bg-color);
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
+.app .tareas-listas-principal h1 {
+  color: var(--text-color);
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.freecodecamp-logo-contenedor {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.freecodecamp-logo-contenedor .freecodecamp-logo {
+  width: 400px;
+  height: 50px;
+}
+
+.tarea-contenedor {
+  width: 450px;
+  min-height: 65px;
+  background-color: var(--todos-bg-color);
+  margin: 5px auto;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.tarea-contenedor .tarea-texto {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  overflow-wrap: anywhere;
+  display: flex;
+  align-items: center;
+}
+.tarea-contenedor .tarea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.tarea-contenedor.completada {
+  background-color: var(--successful);
+  text-decoration: line-through;
+}
+
+.tarea-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.tarea-formulario .tarea-input {
+  width: 350px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background-color: #fff;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #000;
+}
+.tarea-formulario .tarea-input:focus {
+  outline: var(--bd-input);
+  border: 2px solid var(--bd-input);
+}
+.tarea-formulario .tarea-boton {
+  padding: 16px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background-color: var(--button-bg-color);
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  text-transform: capitalize;
+}
+.tarea-formulario .tarea-boton:hover {
+  background-color: #19376D;
+}
+
+.tareas-listas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

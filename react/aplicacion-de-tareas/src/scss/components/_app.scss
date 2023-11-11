@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .tareas-listas-principal {
+    width: 600px;
+    min-height: 500px;
+    background-color: var(--todo-bg-color);
+    padding: 25px;
+    margin: 10px;
+    border-radius: 26px;
+
+    h1 {
+      color: var(--text-color);
+      font-size: 4rem;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+}
